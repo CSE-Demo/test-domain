@@ -30,6 +30,7 @@
     "**/*.tsx"
 , "src/app/api/hello/post/route.js"  ],
   "exclude": [
-    "node_modules"
+    "node_modules",
+    ".yarnrc"
   ]
 }

@@ -2,7 +2,27 @@ This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-
 
 ## Getting Started
 
-First, run the development server:
+
+First, make sure to use Node version 15 or higher
+
+```bash
+# check node version
+node --version
+
+# installing the latest node version
+nvm install node
+
+# installing a node version
+nvm install 20
+
+# list installed node packages
+nvm ls
+
+# use a node version
+nvm use 20
+```
+
+Then, run the development server:
 
 ```bash
 npm run dev
@@ -12,6 +32,16 @@ yarn dev
 pnpm dev
 # or
 bun dev
+```
+
+To install new dependencies, we need to speficy the registry because the intuit global registry is set to https://registry.npmjs.intuit.com
+
+```bash
+# verify global registry setting
+npm config get registry
+
+# example to install react-icons package from npmjs.org
+npm install react-icons --registry=https://registry.npmjs.org/
 ```
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
